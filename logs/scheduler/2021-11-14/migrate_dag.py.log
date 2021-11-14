@@ -378,3 +378,183 @@ psycopg2.OperationalError: could not translate host name "x" to address: Tempora
 [2021-11-14 16:52:59,920] {logging_mixin.py:104} INFO - 
 [2021-11-14 16:52:59,920] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
 [2021-11-14 16:52:59,959] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.082 seconds
+[2021-11-14 16:53:29,988] {scheduler_job.py:181} INFO - Started process (PID=18404) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:53:29,989] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:53:29,990] {logging_mixin.py:104} INFO - [2021-11-14 16:53:29,990] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:53:30,019] {logging_mixin.py:104} INFO - [2021-11-14 16:53:30,018] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:53:30,021] {logging_mixin.py:104} INFO - [2021-11-14 16:53:30,020] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:53:30,022] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:53:30,022] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:53:31,064] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 1.079 seconds
+[2021-11-14 16:54:01,785] {scheduler_job.py:181} INFO - Started process (PID=18467) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:54:01,787] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:54:01,788] {logging_mixin.py:104} INFO - [2021-11-14 16:54:01,788] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:54:01,823] {logging_mixin.py:104} INFO - [2021-11-14 16:54:01,822] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:54:01,825] {logging_mixin.py:104} INFO - [2021-11-14 16:54:01,824] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:54:01,825] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:54:01,826] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:54:02,487] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.708 seconds
+[2021-11-14 16:54:32,952] {scheduler_job.py:181} INFO - Started process (PID=18532) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:54:32,953] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:54:32,954] {logging_mixin.py:104} INFO - [2021-11-14 16:54:32,954] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:54:33,010] {logging_mixin.py:104} INFO - [2021-11-14 16:54:33,010] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:54:33,014] {logging_mixin.py:104} INFO - [2021-11-14 16:54:33,013] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:54:33,014] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:54:33,015] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:54:33,310] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.362 seconds
+[2021-11-14 16:55:03,408] {scheduler_job.py:181} INFO - Started process (PID=18587) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:55:03,411] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:55:03,413] {logging_mixin.py:104} INFO - [2021-11-14 16:55:03,412] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:55:03,447] {logging_mixin.py:104} INFO - [2021-11-14 16:55:03,447] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:55:03,450] {logging_mixin.py:104} INFO - [2021-11-14 16:55:03,449] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:55:03,450] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:55:03,451] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:55:03,470] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.071 seconds
+[2021-11-14 16:55:33,525] {scheduler_job.py:181} INFO - Started process (PID=18642) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:55:33,530] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:55:33,533] {logging_mixin.py:104} INFO - [2021-11-14 16:55:33,533] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:55:33,569] {logging_mixin.py:104} INFO - [2021-11-14 16:55:33,569] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:55:33,571] {logging_mixin.py:104} INFO - [2021-11-14 16:55:33,570] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:55:33,571] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:55:33,572] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:55:33,596] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.082 seconds
+[2021-11-14 16:56:03,943] {scheduler_job.py:181} INFO - Started process (PID=18706) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:56:03,946] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:56:03,948] {logging_mixin.py:104} INFO - [2021-11-14 16:56:03,947] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:56:03,982] {logging_mixin.py:104} INFO - [2021-11-14 16:56:03,981] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:56:03,985] {logging_mixin.py:104} INFO - [2021-11-14 16:56:03,983] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:56:03,985] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:56:03,986] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:56:04,256] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.320 seconds
+[2021-11-14 16:56:34,973] {scheduler_job.py:181} INFO - Started process (PID=18759) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:56:34,974] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:56:34,976] {logging_mixin.py:104} INFO - [2021-11-14 16:56:34,975] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:56:35,006] {logging_mixin.py:104} INFO - [2021-11-14 16:56:35,006] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:56:35,009] {logging_mixin.py:104} INFO - [2021-11-14 16:56:35,008] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:56:35,009] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:56:35,009] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:56:35,038] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.073 seconds
+[2021-11-14 16:57:05,296] {scheduler_job.py:181} INFO - Started process (PID=18819) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:57:05,297] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:57:05,298] {logging_mixin.py:104} INFO - [2021-11-14 16:57:05,298] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:57:05,333] {logging_mixin.py:104} INFO - [2021-11-14 16:57:05,333] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:57:05,336] {logging_mixin.py:104} INFO - [2021-11-14 16:57:05,335] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:57:05,336] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:57:05,336] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:57:05,384] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.094 seconds
+[2021-11-14 16:57:13,844] {scheduler_job.py:181} INFO - Started process (PID=18839) to work on /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:57:13,847] {scheduler_job.py:632} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2021-11-14 16:57:13,847] {logging_mixin.py:104} INFO - [2021-11-14 16:57:13,847] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:57:13,882] {logging_mixin.py:104} INFO - [2021-11-14 16:57:13,882] {base.py:78} INFO - Using connection to: id: airflow_db_x. Host: x, Port: 5432, Schema: , Login: postgres, Password: password, extra: {}
+[2021-11-14 16:57:13,886] {logging_mixin.py:104} INFO - [2021-11-14 16:57:13,885] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/migrate_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/migrate_dag.py", line 13, in <module>
+    src_conn = src.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/hooks/postgres.py", line 115, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "x" to address: Temporary failure in name resolution
+[2021-11-14 16:57:13,886] {logging_mixin.py:104} INFO - 
+[2021-11-14 16:57:13,889] {scheduler_job.py:644} WARNING - No viable dags retrieved from /opt/airflow/dags/migrate_dag.py
+[2021-11-14 16:57:13,917] {scheduler_job.py:189} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.077 seconds
